@@ -1,13 +1,13 @@
-package by.andervyd;
+package by.andervyd.example_tut;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@Controller
+//@Controller
 public class MyController {
 
-    @RequestMapping("/")
+    /*@RequestMapping("/")
     public String showFirstView() {
-        return "first-view";
-    }
+        return "example/first-view";
+    }*/
 }
