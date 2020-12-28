@@ -5,6 +5,7 @@
 <head>
 
     <meta charset="UTF-8">
+    <style><%@include file="/WEB-INF/css/style.css"%></style>
     <title>Data request form</title>
 
 </head>
@@ -12,15 +13,24 @@
 
     <h4>Enter your detais:</h4>
 
-    <form:form action="show-details" modelAttribute="employees">
+    <div class="container">
+        <form:form action="show-details" modelAttribute="employees">
 
-        Name: <form:input path="firstName"/>
-        Surname: <form:input path="lastName"/>
-        Salary: <form:input path="salary"/>
+            <div class="dws-input">
+                Name: <br/> <form:input type="text" path="firstName" />
+            </div>
+            <div class="dws-input">
+                Surname: <br/>  <form:input type="text" path="lastName"/>
+            </div>
+            <div class="dws-input">
+                Salary: <br/>  <form:input type="text" path="salary"/>
+            </div>
+                <br/>
 
-        <input type="submit", value="Submit">
+            <input class="dws-submit" type="submit", value="Submit">
 
-    </form:form>
+        </form:form>
+    </div>
 
 </body>
 </html>
