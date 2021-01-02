@@ -11,26 +11,55 @@
 </head>
 <body>
 
-    <h4>Enter your detais:</h4>
-
     <div class="container">
-        <form:form action="show-details" modelAttribute="employees">
 
-            <div class="dws-input">
-                Name: <br/> <form:input type="text" path="firstName" />
-            </div>
-            <div class="dws-input">
-                Surname: <br/>  <form:input type="text" path="lastName"/>
-            </div>
-            <div class="dws-input">
-                Salary: <br/>  <form:input type="text" path="salary"/>
-            </div>
-                <br/>
+        <div class="title">Create form</div>
 
-            <input class="dws-submit" type="submit", value="Submit">
+        <div class="sub-container">
 
-        </form:form>
+            <form:form action="show-details" modelAttribute="employees">
+
+                <div class="form">
+                    <label class="label">First name:</label>
+                    <form:input type="text" path="firstName" class="input" placeholder="your first name"/>
+
+
+                <div class="form">
+                    <label class="label">Last name:</label>
+                    <form:input type="text" path="lastName" class="input" placeholder="your last name"/>
+
+                <div class="form">
+                    <label class="label">Salary:</label>
+                    <form:input type="text" path="salary" class="input"/>
+
+                <input class="btn" type="submit" value="Register"/>
+
+            </form:form>
+        </div>
     </div>
+
+
+<%--    <h4>Enter your detais:</h4>--%>
+
+<%--    <div class="container">--%>
+<%--        <form:form action="show-details" modelAttribute="employees">--%>
+
+<%--            <div class="dws-input">--%>
+<%--                <label>Name: </label>--%>
+<%--                <br/> <form:input type="text" path="firstName" />--%>
+<%--            </div>--%>
+<%--            <div class="dws-input">--%>
+<%--                Surname: <br/>  <form:input type="text" path="lastName"/>--%>
+<%--            </div>--%>
+<%--            <div class="dws-input">--%>
+<%--                Salary: <br/>  <form:input type="text" path="salary"/>--%>
+<%--            </div>--%>
+<%--                <br/>--%>
+
+<%--            <input class="dws-submit" type="submit", value="Submit">--%>
+
+<%--        </form:form>--%>
+<%--    </div>--%>
 
 </body>
 </html>

@@ -10,10 +10,13 @@
 <body>
 
     <h2>Your form</h2>
+    <br/>
 
-    Name ${employees.firstName}
-    Surname ${employees.lastName}
-    Salary ${employees.salary}
+    Name:       ${employees.firstName}
+    <br/>
+    Surname:    ${employees.lastName}
+    <br/>
+    Salary:     ${employees.salary}
 
 </body>
 </html>
