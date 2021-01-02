@@ -4,19 +4,31 @@
 <head>
 
     <meta charset="UTF-8">
+    <style><%@include file="/WEB-INF/css/form.css"%></style>
     <title>Show form</title>
 
 </head>
 <body>
 
-    <h2>Your form</h2>
-    <br/>
+    <div class="container">
 
-    Name:       ${employees.firstName}
-    <br/>
-    Surname:    ${employees.lastName}
-    <br/>
-    Salary:     ${employees.salary}
+        <div class="title">Your form</div>
+
+            <div class="sub-container">
+
+                    <label class="label">First name:</label>
+                    <div class="get-data">${employees.firstName}</div>
+                    <br/>
+
+                    <label class="label">Last name:</label>
+                    <div class="get-data">${employees.lastName}</div>
+                    <br/>
+
+                    <label class="label">Salary:</label>
+                    <div class="get-data">${employees.salary}</div>
+
+            </div>
+    </div>
 
 </body>
 </html>

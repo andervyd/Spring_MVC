@@ -43,55 +43,24 @@ body {
 }
 
 .sub-container {
-    padding-top: 30px;
+    width: 300px;
+    height: 60px;
 }
 
-.form {
-    width: 100%;
-    margin-bottom: 10px;
+.label, .get-data {
+    display: inline-block;
+    margin: 3px;
+    background: #fff;
 }
 
-.form .label {
+.label {
     text-transform: capitalize;
     font-weight: 700;
+    width: 120px;
 }
 
-.form .input {
-    margin: 5px 0 0;
-    width: 100%;
-    padding: 15px;
-    color: #1f72ff;
-    font-size: 12px;
-    box-sizing: border-box;
-    border: 2px solid #1f72ff;
-    outline: none;
-}
-
-.btn {
-    width: 100%;
-    background: #1f72ff;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: bold;
-    letter-spacing: 1px;
-    cursor: pointer;
-    margin-top: 30px;
-}
-
-::-webkit-input-placeholder {
-    text-transform: uppercase;
-    font-family: "open sans", sans-serif;
-}
-
-::-moz-placeholder {
-    text-transform: uppercase;
-    font-family: "open sans", sans-serif;
-}
-
-::-ms-input-placeholder {
-    text-transform: uppercase;
-    font-family: "open sans", sans-serif;
+.get-data {
+    width: 160px;
+    text-align: right;
+    color: #0d58ff;
 }
