@@ -18,14 +18,19 @@
 
                     <label class="label">First name:</label>
                     <div class="get-data">${employees.firstName}</div>
-                    <br/>
+                <br/>
 
                     <label class="label">Last name:</label>
                     <div class="get-data">${employees.lastName}</div>
-                    <br/>
+                <br/>
 
                     <label class="label">Salary:</label>
-                    <div class="get-data">${employees.salary}</div>
+                    <div class="get-data">${employees.salary}$</div>
+                <br/>
+
+                    <label class="label">Department:</label>
+                    <div class="get-data">${employees.department}</div>
+                <br/>
 
             </div>
     </div>

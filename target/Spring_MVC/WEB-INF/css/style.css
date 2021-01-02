@@ -67,6 +67,22 @@ body {
     outline: none;
 }
 
+.select {
+    display: block;
+    margin: 5px 0 0;
+    width: 100%;
+    padding: 15px;
+    color: #1f72ff;
+    font-size: 12px;
+    box-sizing: border-box;
+    border: 2px solid #1f72ff;
+    outline: none;
+    background: #fff;
+    text-transform: uppercase;
+    border-radius: 0;
+    -moz-appearance: none;
+}
+
 .btn {
     width: 100%;
     background: #1f72ff;
