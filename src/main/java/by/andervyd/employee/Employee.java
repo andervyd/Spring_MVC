@@ -9,7 +9,7 @@ public class Employee {
     private String lastName;
     private String department;
     private int salary;
-
+    private String layout;
 /*
     // add selected
     private Map<String, String> departments;
@@ -57,7 +57,15 @@ public class Employee {
         this.salary = salary;
     }
 
-/*
+    public String getLayout() {
+        return layout;
+    }
+
+    public void setLayout(String layout) {
+        this.layout = layout;
+    }
+
+    /*
     public Map<String, String> getDepartments() {
         return departments;
     }

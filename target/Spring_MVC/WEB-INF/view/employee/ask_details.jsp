@@ -22,15 +22,17 @@
                 <div class="form">
                     <label class="label">First name:</label>
                     <form:input type="text" path="firstName" class="input" placeholder="your first name"/>
-
+                </div>
 
                 <div class="form">
                     <label class="label">Last name:</label>
                     <form:input type="text" path="lastName" class="input" placeholder="your last name"/>
+                </div>
 
                 <div class="form">
                     <label class="label">Salary:</label>
                     <form:input type="text" path="salary" class="input"/>
+                </div>
 
                 <div class="form">
                     <label class="label">Department:</label>
@@ -41,6 +43,18 @@
                         <form:option value="Human Resources">HR</form:option>
                         <form:option value="Sales">Sales</form:option>
                     </form:select>
+                </div>
+
+                <div class="form">
+                    <label class="label">Knowledge of layout?</label>
+<br/>
+                <div class="form-radiobutton">
+                       <form:radiobutton path="layout" value="yes"/>
+                    <label class="text">yes</label>
+                        <form:radiobutton path="layout" value="no"/>
+                    <label class="text">no</label>
+                </div>
+                </div>
 
                 <input class="btn" type="submit" value="Register"/>
 

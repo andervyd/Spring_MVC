@@ -32,6 +32,9 @@
                     <div class="get-data">${employees.department}</div>
                 <br/>
 
+                    <label class="label">Knowledge of layout:</label>
+                    <div class="get-data">${employees.layout}</div>
+
             </div>
     </div>
 

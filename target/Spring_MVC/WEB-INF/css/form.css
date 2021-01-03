@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    width: 500px;
+    width: 600px;
     margin: 150px auto 0;
     background: #fff;
     padding: 40px;
@@ -55,7 +55,7 @@ body {
 .label {
     text-transform: capitalize;
     font-weight: 700;
-    width: 120px;
+    width: 220px;
 }
 
 .get-data {
