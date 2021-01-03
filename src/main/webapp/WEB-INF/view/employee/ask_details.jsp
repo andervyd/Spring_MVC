@@ -38,6 +38,12 @@
                 </div>
 
                 <div class="form">
+                    <label class="label">Email:</label>
+                    <form:input type="text" path="email" class="input" placeholder="your email"/>
+                    <form:errors path="email" cssClass="error"/>
+                </div>
+
+                <div class="form">
                     <label class="label">Salary:</label>
                     <form:input type="text" path="salary" class="input"/>
                     <form:errors path="salary" cssClass="error"/>

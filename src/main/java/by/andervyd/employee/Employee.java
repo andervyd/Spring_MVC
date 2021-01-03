@@ -1,5 +1,7 @@
 package by.andervyd.employee;
 
+import by.andervyd.validation.CheckEmail;
+
 import javax.validation.constraints.*;
 import java.util.HashMap;
 import java.util.Map;
@@ -8,18 +10,28 @@ public class Employee {
 
     @Size(min = 2, message = "short name")
     private String firstName;
+
 //    @NotNull(message = "required field")
 //    @NotEmpty(message = "required field")
     @NotBlank(message = "required field")
     private String lastName;
+
     @Pattern(regexp = "\\d{3}-\\d{2}-\\d{2}", message = "please use pattern XXX-XX-XX")
     private String phoneNumber;
+
+    @CheckEmail(value = "@info.com", message = "email mast be \"info.com\"")
+    private String email;
+
     private String department;
+
     @Min(value = 500, message = "salary minimum 499$")
     @Max(value = 5000, message = "salary maximum 5001$")
     private int salary;
+
     private String layout;
+
     private String[] languages;
+
 /*
     // add selected
     private Map<String, String> departments;
@@ -91,7 +103,15 @@ public class Employee {
         this.phoneNumber = phoneNumber;
     }
 
-/*
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    /*
     public Map<String, String> getDepartments() {
         return departments;
     }

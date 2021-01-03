@@ -29,6 +29,10 @@
                     <div class="get-data">${employees.phoneNumber}</div>
                 <br/>
 
+                    <label class="label">Email:</label>
+                    <div class="get-data">${employees.email}</div>
+                <br/>
+
                     <label class="label">Salary:</label>
                     <div class="get-data">${employees.salary}$</div>
                 <br/>
