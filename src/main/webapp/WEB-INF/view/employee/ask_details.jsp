@@ -22,11 +22,13 @@
                 <div class="form">
                     <label class="label">First name:</label>
                     <form:input type="text" path="firstName" class="input" placeholder="your first name"/>
+                    <form:errors path="firstName" cssClass="error"/>
                 </div>
 
                 <div class="form">
-                    <label class="label">Last name:</label>
+                    <label class="label">Last name:*</label>
                     <form:input type="text" path="lastName" class="input" placeholder="your last name"/>
+                    <form:errors path="lastName" cssClass="error"/>
                 </div>
 
                 <div class="form">

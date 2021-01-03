@@ -97,6 +97,11 @@ body {
     margin-top: 30px;
 }
 
+.error {
+    font-size: 10px;
+    color: red;
+}
+
 ::-webkit-input-placeholder {
     text-transform: uppercase;
     font-family: "open sans", sans-serif;

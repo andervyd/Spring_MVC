@@ -1,11 +1,19 @@
 package by.andervyd.employee;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Employee {
 
+    @Size(min = 2, message = "short name")
     private String firstName;
+//    @NotNull(message = "required field")
+//    @NotEmpty(message = "required field")
+    @NotBlank(message = "required field")
     private String lastName;
     private String department;
     private int salary;
