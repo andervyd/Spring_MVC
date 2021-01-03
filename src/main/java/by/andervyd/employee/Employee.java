@@ -1,9 +1,6 @@
 package by.andervyd.employee;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,11 +12,14 @@ public class Employee {
 //    @NotEmpty(message = "required field")
     @NotBlank(message = "required field")
     private String lastName;
+    @Pattern(regexp = "\\d{3}-\\d{2}-\\d{2}", message = "please use pattern XXX-XX-XX")
+    private String phoneNumber;
     private String department;
+    @Min(value = 500, message = "salary minimum 499$")
+    @Max(value = 5000, message = "salary maximum 5001$")
     private int salary;
     private String layout;
     private String[] languages;
-
 /*
     // add selected
     private Map<String, String> departments;
@@ -82,6 +82,15 @@ public class Employee {
     public void setLanguages(String[] languages) {
         this.languages = languages;
     }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
 /*
     public Map<String, String> getDepartments() {
         return departments;

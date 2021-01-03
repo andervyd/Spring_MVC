@@ -32,8 +32,15 @@
                 </div>
 
                 <div class="form">
+                    <label class="label">Phone number:</label>
+                    <form:input type="text" path="phoneNumber" class="input" placeholder="your phone number: xxx-xx-xx"/>
+                    <form:errors path="phoneNumber" cssClass="error"/>
+                </div>
+
+                <div class="form">
                     <label class="label">Salary:</label>
                     <form:input type="text" path="salary" class="input"/>
+                    <form:errors path="salary" cssClass="error"/>
                 </div>
 
                 <div class="form">
