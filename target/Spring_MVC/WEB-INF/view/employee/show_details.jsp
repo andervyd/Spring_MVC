@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 
 <html>
@@ -34,7 +35,14 @@
 
                     <label class="label">Knowledge of layout:</label>
                     <div class="get-data">${employees.layout}</div>
+                <br/>
 
+                <form class="form">
+                <label class="label">Language(s):</label>
+                    <c:forEach var="lang" items="${employees.languages}">
+                        <div class="list">${lang}</div>
+                    </c:forEach>
+                </form>
             </div>
     </div>
 

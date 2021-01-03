@@ -48,12 +48,20 @@
                 <div class="form">
                     <label class="label">Knowledge of layout?</label>
 <br/>
-                <div class="form-radiobutton">
-                       <form:radiobutton path="layout" value="yes"/>
+                <div class="form">
                     <label class="text">yes</label>
-                        <form:radiobutton path="layout" value="no"/>
+                       <form:radiobutton path="layout" value="yes"/>
                     <label class="text">no</label>
+                        <form:radiobutton path="layout" value="no"/>
                 </div>
+                </div>
+
+                <div class="form">
+                    <label class="label">Foreign language(s)</label>
+                    <br/>
+                    EN <form:checkbox path="languages" value="English"/>
+                    DE <form:checkbox path="languages" value="Deutch"/>
+                    FR <form:checkbox path="languages" value="French"/>
                 </div>
 
                 <input class="btn" type="submit" value="Register"/>

@@ -46,8 +46,9 @@ body {
     padding-top: 4px;
 }
 
-.label, .get-data {
+.label, .get-data, .list {
     display: inline-block;
+    clear: both;
     margin: 3px;
     background: #fff;
 }
@@ -60,6 +61,13 @@ body {
 
 .get-data {
     width: 280px;
+    text-align: right;
+    color: #0d58ff;
+}
+
+.list {
+    float: right;
+    width: 100px;
     text-align: right;
     color: #0d58ff;
 }

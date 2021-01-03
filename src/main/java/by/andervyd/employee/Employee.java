@@ -10,6 +10,8 @@ public class Employee {
     private String department;
     private int salary;
     private String layout;
+    private String[] languages;
+
 /*
     // add selected
     private Map<String, String> departments;
@@ -65,7 +67,14 @@ public class Employee {
         this.layout = layout;
     }
 
-    /*
+    public String[] getLanguages() {
+        return languages;
+    }
+
+    public void setLanguages(String[] languages) {
+        this.languages = languages;
+    }
+/*
     public Map<String, String> getDepartments() {
         return departments;
     }
