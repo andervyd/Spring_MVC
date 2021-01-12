@@ -3,8 +3,10 @@ package by.andervyd.employee;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.validation.Valid;
 
@@ -24,7 +26,9 @@ public class RequestFormForEmployee {
         return "/ask_details";
     }
 
-    @RequestMapping("/show-details")
+//    @RequestMapping("/show-details")
+//    @RequestMapping(path = "/show-details", method = RequestMethod.GET)
+    @GetMapping("/show-details") // or @PostMapping("/show-details")
     public String showDetails(
             @Valid @ModelAttribute("employees") Employee employee, BindingResult bindingResult) {
 
